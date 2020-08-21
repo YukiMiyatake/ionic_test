@@ -1,0 +1,7 @@
+{
+  "name": "ionic-angular-tabs2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,17 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Stream
+      Stream Test
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button (click)="playStream()">
-    </ion-fab-button>
-  </ion-fab>
-
+  <div class="ion-padding">
+    <ion-button expand="block" fill="outline" (click)="presentModal()">Streaming</ion-button>
+  </div>
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>

@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'streaming',
+    loadChildren: () => import('./modal/streaming/streaming.module').then( m => m.StreamingPageModule)
   }
 ];
 @NgModule({

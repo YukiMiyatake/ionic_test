@@ -16,8 +16,13 @@ export class Tab1Page {
   async presentModal() {
     const modal = await this.modalCtrl.create({
       component: StreamingPage,
+      cssClass: 'app-streaming', // 効いてる？？
+      componentProps: {
+        'test': 'Hoge',
+      }
     });
     return await modal.present();
   }
+
 
 }

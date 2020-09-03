@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'streaming',
     loadChildren: () => import('./modal/streaming/streaming.module').then( m => m.StreamingPageModule)
+  },
+  {
+    path: 'streaming-overlay',
+    loadChildren: () => import('../../modal/streaming-overlay/streaming-overlay.module').then( m => m.StreamingOverlayPageModule)
   }
 ];
 @NgModule({
